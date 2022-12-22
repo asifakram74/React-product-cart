@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* .................... Global tags .............................. */
+.h5 {
+  font-size: 16.6px !important;
+}
+p {
+  font-size: 14.6px !important;
+}
+
+/* ....................... Navbar ................................... */
+.Navbar {
+  background-color: #1e81b0 !important;
+}
+.navbar-expand-lg .navbar-collapse {
+  flex: inherit;
+}
+.logo {
+  font-size: 32px !important;
+  color: #ffffff !important;
+}
+.navbarBtn span {
+  background-color: #ffffff !important;
+  color: #1e81b0 !important;
+  font-size: 16px;
+  border: none !important;
+}
+
+/* .............................. Home ............................... */
+.gridDiv{
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr !important;
+}
+.cards{
+  padding: 8px;
+
+}
+.card {
+  width: 100% !important;
+  height: 100vh;
+  margin: 3rem 0 0 0;
+
+}
+.card-img-top {
+  height: 30vh;
+}
+.priceClr {
+  color: #1e81b0;
+}
+.title-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.homeBtn {
+  background-color: #1e81b0 !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+.homeBtn:hover{
+  background-color: #013d58 !important;
+
+}
+
+/* ................ cart ....................... */
+.articles {
+  width: 82%;
+  margin: auto;
+}
+
+.cart_box img {
+  width: 50px;
+  height: 50px;
+}
+.cart_img {
+  display: flex;
+  width: 400px;
+}
+
+.cart_img p {
+  margin-left: 10px;
+}
+
+.cart_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 2px solid #1e81b0;
+  padding-bottom: 5px;
+}
+
+.cart_box div:nth-child(2) button {
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.cart_box div:nth-child(3) button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #1e81b0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart_box div:nth-child(3) button:hover {
+  background-color: #1e81b0;
+}
+.cart_box div:nth-child(3) span {
+  background-color: #1e81b0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total span:nth-child(1) {
+  font-size: 2rem;
+  color: #1e81b0;
+}
+
+.total span:nth-child(2) {
+  font-size: 2rem;
+  color: #1e81b0;
+}
