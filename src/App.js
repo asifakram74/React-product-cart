@@ -14,18 +14,14 @@ const App = () => {
   const handleClick = (item) => {
     if (cart.indexOf(item) !== -1) 
     return;
+    item.quantity = 1;
     setCart([...cart, item]);
   };
 
-  const handleChange = (item, index) => {
-    const a = cart.indexOf(item);
-    const b = cart;
-    b[a].amount += index;
+  const handleChange = (item) =>{
+    // setCart(item.[index].quantity)
+  }
 
-    if (b[a].amount === 0) b[a].amount = 1;
-    setCart([...b]);
-  };
- 
   
   return (
     <>
@@ -33,7 +29,8 @@ const App = () => {
       {show ? (
         <Website handleClick={handleClick}  />
       ) : (
-        <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
+        <Cart cart={cart} setCart={setCart} 
+         />
       )}
     </>
   )
